@@ -17,6 +17,13 @@ export function Projects({ range, exclude, columns = "1" }: ProjectsProps) {
   }
 
   const sortedProjects = allProjects.sort((a, b) => {
+    const orderA = a.metadata.order ?? Number.MAX_SAFE_INTEGER;
+    const orderB = b.metadata.order ?? Number.MAX_SAFE_INTEGER;
+
+    if (orderA !== orderB) {
+      return orderA - orderB;
+    }
+
     return new Date(b.metadata.publishedAt).getTime() - new Date(a.metadata.publishedAt).getTime();
   });
 
