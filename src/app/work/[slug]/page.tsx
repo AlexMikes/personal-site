@@ -5,6 +5,7 @@ import {
   Schema,
   AvatarGroup,
   Button,
+  Carousel,
   Column,
   Flex,
   Heading,
@@ -96,9 +97,6 @@ export default async function Project({
         <SmartLink href="/work">
           <Text variant="label-strong-m">Projects</Text>
         </SmartLink>
-        <Text variant="body-default-xs" onBackground="neutral-weak" marginBottom="12">
-          {post.metadata.publishedAt && formatDate(post.metadata.publishedAt)}
-        </Text>
         <Heading variant="display-strong-m">{post.metadata.title}</Heading>
       </Column>
       <Row marginBottom="32" horizontal="center">
@@ -119,7 +117,18 @@ export default async function Project({
         </Row>
       </Row>
       {post.metadata.images.length > 0 && (
-        <Media priority aspectRatio="16 / 9" radius="m" alt="image" src={post.metadata.images[0]} />
+        <Carousel
+          priority
+          indicator="line"
+          aspectRatio="original"
+          sizes="(max-width: 560px) 100vw, 800px"
+          items={post.metadata.images.map((image, index) => ({
+            slide: image,
+            alt: `${post.metadata.title} screenshot ${index + 1}`,
+          }))}
+          thumbnail={{ height: "110", sizes: "160px", scaling: 1 }}
+          marginBottom="40"
+        />
       )}
       <Column style={{ margin: "auto" }} as="article" maxWidth="xs">
         <CustomMDX source={post.content} />
