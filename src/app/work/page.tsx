@@ -1,4 +1,4 @@
-import { Column, Heading, Meta, Schema } from "@once-ui-system/core";
+import { Column, Heading, Meta, Schema, Text } from "@once-ui-system/core";
 import { baseURL, about, person, work } from "@/resources";
 import { Projects } from "@/components/work/Projects";
 
@@ -31,6 +31,9 @@ export default function Work() {
       <Heading marginBottom="l" variant="heading-strong-xl" align="center">
         {work.title}
       </Heading>
+      <Text variant="body-default-l" align="center" onBackground="neutral-weak" marginBottom="xl">
+        Look, I know that making storage racks is not the most meaningful work in the world. But I care about doing it well, and sharing what I learn along the way. Here are some of the products I've designed for StoreYour.
+      </Text>
       <Projects columns="3" />
     </Column>
   );

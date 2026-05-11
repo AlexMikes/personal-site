@@ -117,45 +117,30 @@ export default async function Project({
         </Row>
       </Row>
       
-      {(() => {
-        // Split content into Overview section and rest
-        const overviewMatch = post.content.match(/^(## Overview[\s\S]*?)(?=^##\s)/m);
-        const overviewContent = overviewMatch ? overviewMatch[1] : "";
-        const restContent = overviewMatch 
-          ? post.content.substring(overviewMatch[0].length - 3) // -3 to include the ## of next heading
-          : post.content;
-        
-        return (
-          <>
-            {overviewContent && (
-              <Column style={{ margin: "auto" }} as="article" maxWidth="xs">
-                <CustomMDX source={overviewContent} />
-              </Column>
-            )}
-            
-            {post.metadata.images.length > 0 && (
-              <Carousel
-                priority
-                indicator="line"
-                aspectRatio="original"
-                sizes="(max-width: 560px) 100vw, 800px"
-                items={post.metadata.images.map((image, index) => ({
-                  slide: image,
-                  alt: `${post.metadata.title} screenshot ${index + 1}`,
-                }))}
-                thumbnail={{ height: "110", sizes: "160px", scaling: 1 }}
-                marginBottom="40"
-              />
-            )}
-            
-            {restContent && (
-              <Column style={{ margin: "auto" }} as="article" maxWidth="xs">
-                <CustomMDX source={restContent} />
-              </Column>
-            )}
-          </>
-        );
-      })()}
+      <Column style={{ margin: "auto" }} maxWidth="xs" marginBottom="40">
+        <Heading as="h2" variant="heading-default-xl" marginBottom="12">
+          {post.metadata.tagline || post.metadata.summary}
+        </Heading>
+      </Column>
+      
+      {post.metadata.images.length > 0 && (
+        <Carousel
+          priority
+          indicator="line"
+          aspectRatio="original"
+          sizes="(max-width: 560px) 100vw, 800px"
+          items={post.metadata.images.map((image, index) => ({
+            slide: image,
+            alt: `${post.metadata.title} screenshot ${index + 1}`,
+          }))}
+          thumbnail={{ height: "110", sizes: "160px", scaling: 1 }}
+          marginBottom="40"
+        />
+      )}
+      
+      <Column style={{ margin: "auto" }} as="article" maxWidth="xs">
+        <CustomMDX source={post.content} />
+      </Column>
       <Column fillWidth gap="40" horizontal="center" marginTop="40">
         <Line maxWidth="40" />
         <Heading as="h2" variant="heading-strong-xl" marginBottom="24">
