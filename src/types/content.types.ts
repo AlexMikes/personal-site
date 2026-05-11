@@ -179,6 +179,35 @@ export interface About extends BasePageConfig {
       description: React.ReactNode;
     }>;
   };
+  /** Education section rendered in the same format as work experience */
+  education: {
+    /** Whether to display the education section */
+    display: boolean;
+    /** Title for the education section */
+    title: string;
+    /** List of education experiences */
+    experiences: Array<{
+      /** Institution name */
+      company: string;
+      /** Timeframe of the program */
+      timeframe: string;
+      /** Degree or focus area */
+      role: string;
+      /** Key accomplishments or coursework */
+      achievements: React.ReactNode[];
+      /** Optional images related to the education experience */
+      images?: Array<{
+        /** Image source path */
+        src: string;
+        /** Image alt text */
+        alt: string;
+        /** Image width ratio */
+        width: number;
+        /** Image height ratio */
+        height: number;
+      }>;
+    }>;
+  };
   /** Technical skills section */
   technical: {
     /** Whether to display technical skills section */

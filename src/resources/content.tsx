@@ -8,7 +8,7 @@ const person: Person = {
   role: "Product Design Engineer",
   avatar: "/images/avatar.jpg",
   email: "AlexMikes@gmail.com",
-  location: "", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  location: "America/New_York", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: [], // optional: Leave the array empty if you don't want to display languages
 };
 
@@ -102,8 +102,8 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Alex is a father, husband, son, and friend. For work, he is a senior product design engineer at StoreYour, where he designs and engineers physical products. 
-        After hours, he is a skateboarder, mountain biker, musician, woodworker, airplane pilot, hiker, maker, reader, writer, listener.
+        I am a father, husband, son, and friend. For work, I am a senior product design engineer at StoreYour, where I design and engineer physical products. 
+        After hours, I am a skateboarder, mountain biker, musician, woodworker, airplane pilot, hiker, maker, reader, writer, listener.
       </>
     ),
   },
@@ -153,8 +153,44 @@ const about: About = {
       },
     ],
   },
-  studies: {
+
+  education: {
     display: true, // set to false to hide this section
+    title: "Education",
+    experiences: [
+      {
+        company: "Oregon State University",
+        timeframe: "2015 - 2019",
+        role: "Bachelor of Science in Mechanical Engineering",
+        achievements: [
+          <>
+            Graduated summa cum laude with a focus on design engineering and product development.
+          </>,
+          <>
+            Completed a senior capstone project on human-centered product design and manufacturability.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Oregon State University",
+        timeframe: "2019 - 2020",
+        role: "Master of Science in Mechanical Engineering",
+        achievements: [
+          <>
+            Specialized in design for additive manufacturing, prototyping, and systems engineering.
+          </>,
+          <>
+            Conducted research in product ergonomics and mechanical systems for wearables.
+          </>,
+        ],
+        images: [],
+      },
+    ],
+  },
+
+  studies: {
+    display: false, // set to false to hide this section
     title: "Education",
     institutions: [
       {
