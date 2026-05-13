@@ -6,9 +6,9 @@ const person: Person = {
   lastName: "Mikes",
   name: `Alex Mikes`,
   role: "Product Design Engineer",
-  avatar: "/images/avatar.jpg",
+  avatar: "/images/mej2.webp",
   email: "AlexMikes@gmail.com",
-  location: "America/New_York", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  location: "America/Washington", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: [], // optional: Leave the array empty if you don't want to display languages
 };
 
@@ -25,8 +25,16 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/alexmikes",
     essential: false,
+    footer: false,
+  },
+  {
+  name: "Email",
+  icon: "email",
+  link: `mailto:${person.email}`,
+  essential: true,
+  footer: true,
   },
   {
     name: "LinkedIn",
@@ -39,19 +47,16 @@ const social: Social = [
     icon: "instagram",
     link: "https://www.instagram.com/thealexmikes/",
     essential: true,
+    footer: true,
   },
   {
     name: "Threads",
     icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.threads.com/@alexmikes",
     essential: false,
+    footer: false,
   },
-  {
-    name: "Email",
-    icon: "email",
-    link: `mailto:${person.email}`,
-    essential: true,
-  },
+
 ];
 
 const home: Home = {
@@ -83,8 +88,8 @@ const home: Home = {
 
 const about: About = {
   path: "/about",
-  label: "About",
-  title: `About – ${person.name}`,
+  label: "Resume",
+  title: `Resume – ${person.name}`,
   description: `Meet ${person.name}, ${person.role}`,
   tableOfContent: {
     display: true,
@@ -278,7 +283,7 @@ const about: About = {
 const blog: Blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "This is what I do for fun",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route

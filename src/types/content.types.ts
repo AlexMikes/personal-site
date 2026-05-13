@@ -61,6 +61,8 @@ export type Social = Array<{
   link: string;
   /** Whether this social link is essential and should be displayed on the about page */
   essential?: boolean;
+  /** Whether this social link should appear in the footer */
+  footer?: boolean;
 }>;
 
 /**
