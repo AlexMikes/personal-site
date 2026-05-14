@@ -87,7 +87,7 @@ const home: Home = {
 };
 
 const about: About = {
-  path: "/about",
+  path: "/resume",
   label: "Resume",
   title: `Resume – ${person.name}`,
   description: `Meet ${person.name}, ${person.role}`,
@@ -294,8 +294,17 @@ const work: Work = {
   label: "Work",
   title: `Portfolio – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
+  // Create new project pages by adding a new .mdx file to app/work/projects
+  // All projects will be listed on the /work route
+};
+
+const play: Work = {
+  path: "/play",
+  label: "Play",
+  title: `Play – ${person.name}`,
+  description: `Non-work projects and creative experiments by ${person.name}`,
+  // Create new play pages by adding a new .mdx file to app/play/projects
+  // All play posts will be listed on the /play route
 };
 
 const gallery: Gallery = {
@@ -349,4 +358,4 @@ const gallery: Gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, newsletter, home, about, blog, work, play, gallery };

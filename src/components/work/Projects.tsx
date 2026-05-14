@@ -6,10 +6,19 @@ interface ProjectsProps {
   range?: [number, number?];
   exclude?: string[];
   columns?: "1" | "2" | "3";
+  customPath?: string[];
+  hrefPrefix?: string;
 }
 
-export function Projects({ range, exclude, columns = "1" }: ProjectsProps) {
-  let allProjects = getPosts(["src", "app", "work", "projects"]);
+export function Projects({
+  range,
+  exclude,
+  columns = "1",
+  customPath = ["src", "app", "work", "projects"],
+  hrefPrefix,
+}: ProjectsProps) {
+  const actualHrefPrefix = hrefPrefix ?? customPath[2] ?? "work";
+  let allProjects = getPosts(customPath);
 
   // Exclude by slug (exact match)
   if (exclude && exclude.length > 0) {
@@ -37,7 +46,7 @@ export function Projects({ range, exclude, columns = "1" }: ProjectsProps) {
         <ProjectCard
           priority={index < 2}
           key={post.slug}
-          href={`/work/${post.slug}`}
+          href={`/${actualHrefPrefix}/${post.slug}`}
           images={post.metadata.images}
           title={post.metadata.title}
           description={post.metadata.summary}
