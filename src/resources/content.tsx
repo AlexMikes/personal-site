@@ -92,7 +92,7 @@ const about: About = {
   title: `Resume – ${person.name}`,
   description: `Meet ${person.name}, ${person.role}`,
   tableOfContent: {
-    display: true,
+    display: false,
     subItems: true,
   },
   avatar: {
@@ -117,44 +117,195 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "StoreYour",
+        timeframe: "2020 - Present",
+        role: "Senior Product Design Engineer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Lead end-to-end product development for hardgoods and mixed-material consumer products from concept through production launch.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Independently designed and launched 35+ consumer products resulting in a portfolio of 150+ production SKUs across multiple categories.
           </>,
-        ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
+          <>
+            Collaborated cross-functionally on the development of 25+ additional products representing 100+ supplemental SKUs across diverse consumer product lines.
+          </>,
+          <>
+            Applied mechanical engineering principles, analytical calculations, and Finite Element Analysis (FEA) to validate product functionality, structural performance, and reliability.
+          </>,
+          <>
+            Drove Design for Manufacturing (DfM) and Design for Assembly (DfA) initiatives to optimize production efficiency, quality, and cost targets.
+          </>,
+          <>
+            Collaborated with international manufacturers and suppliers to manage quoting, prototyping, tooling, production, quality control, and supply chain logistics.
+          </>,
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Hayes+Associates, Inc.",
+        timeframe: "2017 - 2020",
+        role: "Mechanical Engineering Consultant",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Led the design and fabrication of custom products, fixtures, and experimental test systems for engineering analysis and forensic investigations.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Applied mechanical engineering fundamentals to analyze dynamics, material behavior, and failure mechanisms in real-world accident scenarios.
+          </>,
+          <>
+            Conducted laboratory and field testing to validate hypotheses and support engineering conclusions.
+          </>,
+          <>
+            Modeled and evaluated stresses, loads, and mechanical performance of materials and structures during impact events.
           </>,
         ],
-        images: [],
+      },
+      {
+        company: "Weyerhaeuser",
+        timeframe: "2017",
+        role: "Mechanical Engineering Intern",
+        achievements: [
+          <>
+            Managed capital improvement projects that generated more than $50,000 in annual operational value.
+          </>,
+          <>
+            Coordinated cross-functional teams of electricians, millwrights, and production personnel to support manufacturing process improvements.
+          </>,
+          <>
+            Designed and implemented microprocessor-based safety devices to improve fire watch monitoring and operational safety.
+          </>,
+          <>
+            Created 3D models and simulations of industrial automation systems to evaluate process improvements and equipment integration.
+          </>,
+        ],
+      },
+      {
+        company: "Oregon State University",
+        timeframe: "2020",
+        role: "Graduate Teaching Assistant",
+        achievements: [
+          <>
+            Led Mechanical Engineering laboratory sections for undergraduate and graduate students in machine design and mechanism analysis.
+          </>,
+          <>
+            Supported student learning through technical instruction, laboratory activities, office hours, and assignment evaluation.
+          </>,
+          <>
+            Taught concepts including failure analysis, mechanical component design, kinematics, and multi-body mechanisms.
+          </>,
+        ],
+      },
+      {
+        company: "Oregon State University",
+        timeframe: "2019 - 2020",
+        role: "Graduate Research Assistant",
+        achievements: [
+          <>
+            Developed machine learning and data mining workflows in Python for design automation research.
+          </>,
+          <>
+            Researched modern product development methodologies and computational design approaches.
+          </>,
+          <>
+            Designed, fabricated, and tested prototypes using CAD/CAM tools and rapid prototyping methods.
+          </>,
+        ],
+      },
+      {
+        company: "Oregon State University",
+        timeframe: "2016 - 2019",
+        role: "Undergraduate Research Assistant",
+        achievements: [
+          <>
+            Contributed to interdisciplinary robotics, sustainable design, and human factors engineering research projects.
+          </>,
+          <>
+            Developed optimization and data-driven engineering tools using Julia and embedded systems platforms.
+          </>,
+          <>
+            Designed and tested robotic hardware, sensing systems, experimental platforms, and prototype devices across multiple research labs.
+          </>,
+        ],
+      },
+      {
+        company: "Oregon State University",
+        timeframe: "2015 - 2017",
+        role: "Multimedia Engineer",
+        achievements: [
+          <>
+            Managed technical systems, multimedia infrastructure, and equipment operations across university facilities.
+          </>,
+          <>
+            Maintained compatibility between legacy and next-generation technologies while troubleshooting hardware and software issues.
+          </>,
+          <>
+            Trained users and administrators on system operation, maintenance, and technical best practices.
+          </>,
+        ],
+      },
+      {
+        company: "OHSU | Oregon Health & Science University",
+        timeframe: "2014 - 2015",
+        role: "Multimedia Engineer",
+        achievements: [
+          <>
+            Designed, installed, and validated integrated multimedia and technical systems in educational and healthcare environments.
+          </>,
+          <>
+            Optimized system performance through troubleshooting, process improvements, and user training.
+          </>,
+          <>
+            Managed hardware and software compatibility across evolving technology platforms and legacy systems.
+          </>,
+        ],
+      },
+      {
+        company: "California Institute of Technology",
+        timeframe: "2012 - 2014",
+        role: "Multimedia Engineer",
+        achievements: [
+          <>
+            Designed and deployed multimedia systems tailored to customer and institutional requirements.
+          </>,
+          <>
+            Coordinated with contractors, vendors, and stakeholders to execute projects on schedule and within budget.
+          </>,
+          <>
+            Supported system integration, installation, and technical problem-solving across multiple concurrent projects.
+          </>,
+        ],
+      },
+      {
+        company: "Studio Trilogy",
+        timeframe: "2008 - 2011",
+        role: "Assistant Engineer",
+        achievements: [
+          <>
+            Supported recording, editing, and mixing sessions using professional analog and digital audio systems.
+          </>,
+          <>
+            Assisted engineers and artists in fast-paced studio environments requiring precision, technical reliability, and attention to detail.
+          </>,
+          <>
+            Maintained and configured studio equipment, signal chains, and recording workflows.
+          </>,
+        ],
+      },
+      {
+        company: "Academy of Art University",
+        timeframe: "2008 - 2011",
+        role: "Lead Audio Engineer",
+        achievements: [
+          <>
+            Managed operation, maintenance, and troubleshooting of audio/video production labs, classrooms, and associated technical infrastructure.
+          </>,
+          <>
+            Supported students and faculty through technical training, equipment setup, and workflow guidance.
+          </>,
+          <>
+            Maintained reliable performance of hardware and software systems across high-use educational environments.
+          </>,
+        ],
       },
     ],
   },
