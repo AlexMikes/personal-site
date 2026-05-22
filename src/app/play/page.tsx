@@ -62,7 +62,7 @@ export default function Play() {
       <Text variant="body-default-l" align="center" onBackground="neutral-weak" marginBottom="xl">
         This is what I do for fun and some other stuff you know
       </Text>
-      <Projects columns="3" />
+      <Projects customPath={["src", "app", "play", "projects"]} columns="3" />
     </Column>
   );
 }

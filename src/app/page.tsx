@@ -12,7 +12,7 @@ import {
   Line,
   Media,
 } from "@once-ui-system/core";
-import { home, about, person, baseURL } from "@/resources";
+import { home, about, person, baseURL, work, play } from "@/resources";
 import { Mailchimp } from "@/components";
 
 export async function generateMetadata() {
@@ -46,8 +46,8 @@ export default function Home() {
           src={home.image}
           alt={`${person.name} portrait`}
           radius="xl"
-          sizes="(max-width: 900px) 100vw, 900px"
-          style={{ width: "100%", maxWidth: 900, aspectRatio: "4 / 3", objectFit: "cover" }}
+          sizes="(max-width: 400px) 100vw, 400px"
+          style={{ width: "100%", maxWidth: 400, aspectRatio: "4 / 3", objectFit: "cover" }}
         />
       </RevealFx>
       <Column fillWidth horizontal="center" gap="m">
@@ -94,18 +94,67 @@ export default function Home() {
               arrowIcon
             >
               <Row gap="8" vertical="center" paddingRight="4">
-                {about.avatar.display && (
+                {/* {about.avatar.display && (
                   <Avatar
                     marginRight="8"
                     style={{ marginLeft: "-0.75rem" }}
                     src={person.avatar}
                     size="m"
                   />
-                )}
+                )} */}
                 {about.label}
               </Row>
             </Button>
           </RevealFx>
+
+          <RevealFx paddingTop="12" delay={0.4} horizontal="center" paddingLeft="12">
+            <Button
+              id="work"
+              data-border="rounded"
+              href={work.path}
+              variant="secondary"
+              size="m"
+              weight="default"
+              arrowIcon
+            >
+              <Row gap="8" vertical="center" paddingRight="4">
+                {/* {about.avatar.display && (
+                  <Avatar
+                    marginRight="8"
+                    style={{ marginLeft: "-0.75rem" }}
+                    src={person.avatar}
+                    size="m"
+                  />
+                )} */}
+                {work.label}
+              </Row>
+            </Button>
+          </RevealFx>
+
+          <RevealFx paddingTop="12" delay={0.4} horizontal="center" paddingLeft="12">
+            <Button
+              id="play"
+              data-border="rounded"
+              href={play.path}
+              variant="secondary"
+              size="m"
+              weight="default"
+              arrowIcon
+            >
+              <Row gap="8" vertical="center" paddingRight="4">
+                {/* {about.avatar.display && (
+                  <Avatar
+                    marginRight="8"
+                    style={{ marginLeft: "-0.75rem" }}
+                    src={person.avatar}
+                    size="m"
+                  />
+                )} */}
+                {play.label}
+              </Row>
+            </Button>
+          </RevealFx>
+
         </Column>
       </Column>
       <Mailchimp />

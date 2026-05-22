@@ -61,7 +61,7 @@ const social: Social = [
 
 const home: Home = {
   path: "/",
-  image: "/images/og/home.jpg",
+  image: "/images/mej2.webp",
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
@@ -81,7 +81,8 @@ const home: Home = {
   },
   subline: (
     <>
-    Senior product design engineer at <Text as="span" size="xl" weight="strong">StoreYour</Text>, where I design and engineer physical products. After hours, I do a lot of other things.
+    Welcome to my personal website. Check out what I do for work and what I do for play.
+    
 </>
   ),
 };
@@ -89,6 +90,7 @@ const home: Home = {
 const about: About = {
   path: "/resume",
   label: "Resume",
+  avatar: "/images/avatar.jpg",
   title: `Resume – ${person.name}`,
   description: `Meet ${person.name}, ${person.role}`,
   tableOfContent: {
@@ -452,7 +454,7 @@ const work: Work = {
 const play: Work = {
   path: "/play",
   label: "Play",
-  title: `Play – ${person.name}`,
+  title: `Playfolio – ${person.name}`,
   description: `Non-work projects and creative experiments by ${person.name}`,
   // Create new play pages by adding a new .mdx file to app/play/projects
   // All play posts will be listed on the /play route
