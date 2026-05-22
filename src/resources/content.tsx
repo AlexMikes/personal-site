@@ -90,7 +90,7 @@ const home: Home = {
 const about: About = {
   path: "/resume",
   label: "Resume",
-  avatar: "/images/mej2.webp",
+  // avatar: "/images/mej2.webp",
   title: `Resume – ${person.name}`,
   description: `Meet ${person.name}, ${person.role}`,
   tableOfContent: {
