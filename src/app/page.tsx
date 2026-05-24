@@ -83,80 +83,62 @@ export default function Home() {
               {home.subline}
             </Text>
           </RevealFx>
-          <RevealFx paddingTop="12" delay={0.4} horizontal="center" paddingLeft="12">
-            <Button
-              id="about"
-              data-border="rounded"
-              prefixIcon="person"
-              href={about.path}
-              variant="secondary"
-              size="m"
-              weight="default"
-              arrowIcon
-            >
-              <Row gap="8" vertical="center" paddingRight="4">
-                {/* {about.avatar.display && (
-                  <Avatar
-                    marginRight="8"
-                    style={{ marginLeft: "-0.75rem" }}
-                    src={person.avatar}
-                    size="m"
-                  />
-                )} */}
-                {about.label}
-              </Row>
-            </Button>
-          </RevealFx>
 
-          <RevealFx paddingTop="12" delay={0.4} horizontal="center" paddingLeft="12">
-            <Button
-              id="work"
-              data-border="rounded"
-              prefixIcon="grid"
-              href={work.path}
-              variant="secondary"
-              size="m"
-              weight="default"
-              arrowIcon
-            >
-              <Row gap="8" vertical="center" paddingRight="4">
-                {/* {about.avatar.display && (
-                  <Avatar
-                    marginRight="8"
-                    style={{ marginLeft: "-0.75rem" }}
-                    src={person.avatar}
-                    size="m"
-                  />
-                )} */}
-                {work.label}
-              </Row>
-            </Button>
-          </RevealFx>
+          <RevealFx
+            paddingTop="12"
+            delay={0.4}
+            horizontal="center"
+            fillWidth
+          >
+            <Row gap="12" horizontal="center" wrap>
+              <Button
+                id="about"
+                data-border="rounded"
+                prefixIcon="person"
+                href={about.path}
+                variant="secondary"
+                size="m"
+                weight="default"
+                arrowIcon
+              >
+                <Row gap="8" vertical="center" paddingRight="4">
+                  {about.label}
+                </Row>
+              </Button>
 
-          <RevealFx paddingTop="12" delay={0.4} horizontal="center" paddingLeft="12">
-            <Button
-              id="play"
-              data-border="rounded"
-              prefixIcon="rocket"
-              href={play.path}
-              variant="secondary"
-              size="m"
-              weight="default"
-              arrowIcon
-            >
-              <Row gap="8" vertical="center" paddingRight="4">
-                {/* {about.avatar.display && (
-                  <Avatar
-                    marginRight="8"
-                    style={{ marginLeft: "-0.75rem" }}
-                    src={person.avatar}
-                    size="m"
-                  />
-                )} */}
-                {play.label}
-              </Row>
-            </Button>
+              <Button
+                id="work"
+                data-border="rounded"
+                prefixIcon="grid"
+                href={work.path}
+                variant="secondary"
+                size="m"
+                weight="default"
+                arrowIcon
+              >
+                <Row gap="8" vertical="center" paddingRight="4">
+                  {work.label}
+                </Row>
+              </Button>
+
+              <Button
+                id="play"
+                data-border="rounded"
+                prefixIcon="rocket"
+                href={play.path}
+                variant="secondary"
+                size="m"
+                weight="default"
+                arrowIcon
+              >
+                <Row gap="8" vertical="center" paddingRight="4">
+                  {play.label}
+                </Row>
+              </Button>
+            </Row>
           </RevealFx>
+          
+
 
         </Column>
       </Column>
