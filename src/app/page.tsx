@@ -87,6 +87,7 @@ export default function Home() {
             <Button
               id="about"
               data-border="rounded"
+              prefixIcon="person"
               href={about.path}
               variant="secondary"
               size="m"
@@ -111,6 +112,7 @@ export default function Home() {
             <Button
               id="work"
               data-border="rounded"
+              prefixIcon="grid"
               href={work.path}
               variant="secondary"
               size="m"
@@ -135,6 +137,7 @@ export default function Home() {
             <Button
               id="play"
               data-border="rounded"
+              prefixIcon="rocket"
               href={play.path}
               variant="secondary"
               size="m"
