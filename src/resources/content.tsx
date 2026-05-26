@@ -1,5 +1,5 @@
 import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
-import { Line, Row, Text } from "@once-ui-system/core";
+import { Line, Row, Text ,SmartLink} from "@once-ui-system/core";
 
 const person: Person = {
   firstName: "Alex",
@@ -384,37 +384,16 @@ const about: About = {
     institutions: [
 
       {
-        name: "Toward automated functional modeling: An association rules approach for mining the relationship between product components and function",
-        description: (
-          <>
-            <a
-              href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AaxJyE8AAAAJ&citation_for_view=AaxJyE8AAAAJ:d1gkVwhDpl0C"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Publication
-            </a>
-            <br />
-            <strong>Authors:</strong> Melissa Tensa, Katherine Edmonds, Vincenzo Ferrero, Alex Mikes, Nicolas Soria Zurita, Rob Stone, Bryony DuPont
-            <br />
-            <strong>Publication date:</strong> 2019/7
-            <br />
-            <strong>Journal:</strong> Proceedings of the Design Society: International Conference on Engineering Design
-          </>
-        ),
-      },
-
-      {
         name: "Optimizing an algorithm for data mining a design repository to automate functional modeling",
         description: (
           <>
-            <a
+            <SmartLink
               href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AaxJyE8AAAAJ&citation_for_view=AaxJyE8AAAAJ:u-x6o8ySG0sC"
-              target="_blank"
-              rel="noopener noreferrer"
+              suffixIcon="chevronRight"
             >
               View Publication
-            </a>
+            </SmartLink>
+
             <br />
             <strong>Authors:</strong> Alex Mikes, Katherine Edmonds, Robert B Stone, Bryony DuPont
             <br />
@@ -429,13 +408,13 @@ const about: About = {
         name: "Data mining a design repository to generate linear functional chains: a step toward automating functional modeling",
         description: (
           <>
-            <a
+            <SmartLink
               href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AaxJyE8AAAAJ&citation_for_view=AaxJyE8AAAAJ:u5HHmVD_uO8C"
-              target="_blank"
-              rel="noopener noreferrer"
+              suffixIcon="chevronRight"
             >
               View Publication
-            </a>
+            </SmartLink>
+
             <br />
             <strong>Authors:</strong> Katherine Edmonds, Alex Mikes, Bryony DuPont, Robert B Stone
             <br />
@@ -450,13 +429,13 @@ const about: About = {
         name: "AutoFunc: A Python package for automating and verifying functional modeling",
         description: (
           <>
-            <a
+            <SmartLink
               href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AaxJyE8AAAAJ&citation_for_view=AaxJyE8AAAAJ:qjMakFHDy7sC"
-              target="_blank"
-              rel="noopener noreferrer"
+              suffixIcon="chevronRight"
             >
               View Publication
-            </a>
+            </SmartLink>
+
             <br />
             <strong>Authors:</strong> Alex Mikes, Katherine Edmonds, Robert B Stone, Bryony DuPont
             <br />
@@ -471,13 +450,13 @@ const about: About = {
         name: "A weighted confidence metric to improve automated functional modeling",
         description: (
           <>
-            <a
+            <SmartLink
               href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AaxJyE8AAAAJ&citation_for_view=AaxJyE8AAAAJ:9yKSN-GCB0IC"
-              target="_blank"
-              rel="noopener noreferrer"
+              suffixIcon="chevronRight"
             >
               View Publication
-            </a>
+            </SmartLink>
+
             <br />
             <strong>Authors:</strong> Katherine Edmonds, Alex Mikes, Bryony DuPont, Robert B Stone
             <br />
@@ -492,13 +471,13 @@ const about: About = {
         name: "Data Mining a Design Repository for Automating and Validating Functional Modeling",
         description: (
           <>
-            <a
+            <SmartLink
               href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AaxJyE8AAAAJ&citation_for_view=AaxJyE8AAAAJ:2osOgNQ5qMEC"
-              target="_blank"
-              rel="noopener noreferrer"
+              suffixIcon="chevronRight"
             >
               View Publication
-            </a>
+            </SmartLink>
+
             <br />
             <strong>Authors:</strong> Alex Mikes
             <br />
@@ -509,15 +488,14 @@ const about: About = {
         ),
       },
 
-
-      {
-        name: "Oregon State University",
-        description: <>
-        Bachelor of Science, Mechanical Engineering
-        <br />2015 - 2019
-        <br />GPA 3.92/4.0 - Summa Cum Laude
-        </>,
-      },
+      // {
+      //   name: "Oregon State University",
+      //   description: <>
+      //   Bachelor of Science, Mechanical Engineering
+      //   <br />2015 - 2019
+      //   <br />GPA 3.92/4.0 - Summa Cum Laude
+      //   </>,
+      // },
     ],
   },
   technical: {
