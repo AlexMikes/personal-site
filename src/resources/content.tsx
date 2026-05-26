@@ -384,18 +384,18 @@ const about: About = {
     institutions: [
 
       {
-        name: (
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AaxJyE8AAAAJ&citation_for_view=AaxJyE8AAAAJ:d1gkVwhDpl0C"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Toward automated functional modeling: An association rules approach for mining the relationship between product components and function
-          </a>
-        ),
+        name: "Toward automated functional modeling: An association rules approach for mining the relationship between product components and function",
         description: (
           <>
-            <strong>Authors:</strong>Melissa Tensa, Katherine Edmonds, Vincenzo Ferrero, Alex Mikes, Nicolas Soria Zurita, Rob Stone, Bryony DuPont
+            <a
+              href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AaxJyE8AAAAJ&citation_for_view=AaxJyE8AAAAJ:d1gkVwhDpl0C"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Publication
+            </a>
+            <br />
+            <strong>Authors:</strong> Melissa Tensa, Katherine Edmonds, Vincenzo Ferrero, Alex Mikes, Nicolas Soria Zurita, Rob Stone, Bryony DuPont
             <br />
             <strong>Publication date:</strong> 2019/7
             <br />
@@ -405,18 +405,18 @@ const about: About = {
       },
 
       {
-        name: (
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AaxJyE8AAAAJ&citation_for_view=AaxJyE8AAAAJ:u-x6o8ySG0sC"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Optimizing an algorithm for data mining a design repository to automate functional modeling
-          </a>
-        ),
+        name: "Optimizing an algorithm for data mining a design repository to automate functional modeling",
         description: (
           <>
-            <strong>Authors:</strong>Alex Mikes, Katherine Edmonds, Robert B Stone, Bryony DuPont
+            <a
+              href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AaxJyE8AAAAJ&citation_for_view=AaxJyE8AAAAJ:u-x6o8ySG0sC"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Publication
+            </a>
+            <br />
+            <strong>Authors:</strong> Alex Mikes, Katherine Edmonds, Robert B Stone, Bryony DuPont
             <br />
             <strong>Publication date:</strong> 2019/8
             <br />
@@ -425,20 +425,19 @@ const about: About = {
         ),
       },
 
-
       {
-        name: (
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AaxJyE8AAAAJ&citation_for_view=AaxJyE8AAAAJ:u5HHmVD_uO8C"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Data mining a design repository to generate linear functional chains: a step toward automating functional modeling
-          </a>
-        ),
+        name: "Data mining a design repository to generate linear functional chains: a step toward automating functional modeling",
         description: (
           <>
-            <strong>Authors:</strong>Katherine Edmonds, Alex Mikes, Bryony DuPont, Robert B Stone
+            <a
+              href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AaxJyE8AAAAJ&citation_for_view=AaxJyE8AAAAJ:u5HHmVD_uO8C"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Publication
+            </a>
+            <br />
+            <strong>Authors:</strong> Katherine Edmonds, Alex Mikes, Bryony DuPont, Robert B Stone
             <br />
             <strong>Publication date:</strong> 2020/2
             <br />
@@ -447,21 +446,19 @@ const about: About = {
         ),
       },
 
-
-
       {
-        name: (
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AaxJyE8AAAAJ&citation_for_view=AaxJyE8AAAAJ:qjMakFHDy7sC"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            AutoFunc: A Python package for automating and verifying functional modeling
-          </a>
-        ),
+        name: "AutoFunc: A Python package for automating and verifying functional modeling",
         description: (
           <>
-            <strong>Authors:</strong>Alex Mikes, Katherine Edmonds, Robert B Stone, Bryony DuPont
+            <a
+              href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AaxJyE8AAAAJ&citation_for_view=AaxJyE8AAAAJ:qjMakFHDy7sC"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Publication
+            </a>
+            <br />
+            <strong>Authors:</strong> Alex Mikes, Katherine Edmonds, Robert B Stone, Bryony DuPont
             <br />
             <strong>Publication date:</strong> 2021/2
             <br />
@@ -470,21 +467,19 @@ const about: About = {
         ),
       },
 
-
-
       {
-        name: (
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AaxJyE8AAAAJ&citation_for_view=AaxJyE8AAAAJ:9yKSN-GCB0IC"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            A weighted confidence metric to improve automated functional modeling
-          </a>
-        ),
+        name: "A weighted confidence metric to improve automated functional modeling",
         description: (
           <>
-            <strong>Authors:</strong>Katherine Edmonds, Alex Mikes, Bryony DuPont, Robert B Stone
+            <a
+              href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AaxJyE8AAAAJ&citation_for_view=AaxJyE8AAAAJ:9yKSN-GCB0IC"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Publication
+            </a>
+            <br />
+            <strong>Authors:</strong> Katherine Edmonds, Alex Mikes, Bryony DuPont, Robert B Stone
             <br />
             <strong>Publication date:</strong> 2020/8
             <br />
@@ -494,18 +489,18 @@ const about: About = {
       },
 
       {
-        name: (
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AaxJyE8AAAAJ&citation_for_view=AaxJyE8AAAAJ:2osOgNQ5qMEC"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Data Mining a Design Repository for Automating and Validating Functional Modeling
-          </a>
-        ),
+        name: "Data Mining a Design Repository for Automating and Validating Functional Modeling",
         description: (
           <>
-            <strong>Authors:</strong>Alex Mikes
+            <a
+              href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AaxJyE8AAAAJ&citation_for_view=AaxJyE8AAAAJ:2osOgNQ5qMEC"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Publication
+            </a>
+            <br />
+            <strong>Authors:</strong> Alex Mikes
             <br />
             <strong>Publication date:</strong> 2020/4
             <br />
@@ -515,7 +510,14 @@ const about: About = {
       },
 
 
-
+      {
+        name: "Oregon State University",
+        description: <>
+        Bachelor of Science, Mechanical Engineering
+        <br />2015 - 2019
+        <br />GPA 3.92/4.0 - Summa Cum Laude
+        </>,
+      },
     ],
   },
   technical: {
