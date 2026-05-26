@@ -181,54 +181,85 @@ const about: About = {
           </>,
         ],
       },
-      {
-        company: "Oregon State University",
-        timeframe: "2020",
-        role: "Graduate Teaching Assistant",
-        achievements: [
+    {
+      company: "Oregon State University",
+      timeframe: "2020",
+      role: "Graduate Teaching Assistant",
+      achievements: [
+        <>
+          <strong>Mechanical Component Design</strong>
+          <br />
           <>
-            Led Mechanical Engineering laboratory sections for undergraduate and graduate students in machine design and mechanism analysis.
-          </>,
-          <>
-            Supported student learning through technical instruction, laboratory activities, office hours, and assignment evaluation.
-          </>,
-          <>
-            Taught concepts including failure analysis, mechanical component design, kinematics, and multi-body mechanisms.
-          </>,
-        ],
-      },
-      {
-        company: "Oregon State University",
-        timeframe: "2019 - 2020",
-        role: "Graduate Research Assistant",
-        achievements: [
-          <>
-            Developed machine learning and data mining workflows in Python for design automation research.
-          </>,
-          <>
-            Researched modern product development methodologies and computational design approaches.
-          </>,
-          <>
-            Designed, fabricated, and tested prototypes using CAD/CAM tools and rapid prototyping methods.
-          </>,
-        ],
-      },
-      {
-        company: "Oregon State University",
-        timeframe: "2016 - 2019",
-        role: "Undergraduate Research Assistant",
-        achievements: [
-          <>
-            Contributed to interdisciplinary robotics, sustainable design, and human factors engineering research projects.
-          </>,
-          <>
-            Developed optimization and data-driven engineering tools using Julia and embedded systems platforms.
-          </>,
-          <>
-            Designed and tested robotic hardware, sensing systems, experimental platforms, and prototype devices across multiple research labs.
-          </>,
-        ],
-      },
+          - Led undergraduate and graduate laboratory sections focused on machine component analysis, failure modes, and design methodology.
+          </>
+          
+          <br />
+          - Supported student success through office hours, laboratory guidance, and evaluation of assignments and reports.
+        </>,
+        <>
+          <strong>Design of Mechanisms</strong>
+          <br />
+          - Guided students in coursework focused on kinematic analysis and multi-link mechanical systems.
+          <br />
+          - Facilitated hands-on instruction and technical problem solving in laboratory environments.
+        </>,
+      ],
+    },
+    {
+      company: "Oregon State University",
+      timeframe: "2019 - 2020",
+      role: "Graduate Research Assistant",
+      achievements: [
+        <>
+          <strong>Design Engineering Lab</strong>
+          <br />
+          - Developed data mining and machine learning workflows in Python to support design automation research.
+          <br />
+          - Investigated advanced product development methodologies and computational design approaches.
+        </>,
+        <>
+          <strong>Prototype Development Lab</strong>
+          <br />
+          - Designed, fabricated, and validated functional product prototypes through iterative testing.
+          <br />
+          - Utilized CAD/CAM tools to support end-to-end product design and manufacturing processes.
+        </>,
+      ],
+    },
+    {
+      company: "Oregon State University",
+      timeframe: "2016 - 2019",
+      role: "Undergraduate Research Assistant",
+      achievements: [
+        <>
+          <strong>Design Engineering Lab</strong>
+          <br />
+          - Developed data-driven methods for sustainable product design and optimization.
+          <br />
+          - Created computational tools in Julia to synthesize and optimize material microstructures.
+        </>,
+        <>
+          <strong>Robot Decision Making Lab</strong>
+          <br />
+          - Designed, implemented, and tested soft hydraulic actuators and liquid metal sensors for underwater ROV applications.
+        </>,
+        <>
+          <strong>Dynamic Robotics Lab</strong>
+          <br />
+          - Designed and evaluated bipedal robot foot systems to improve locomotion performance.
+          <br />
+          - Developed hardware and software testing platforms for bipedal and quadrupedal robotics research.
+        </>,
+        <>
+          <strong>Human Factors Engineering Lab</strong>
+          <br />
+          - Developed hardware and software systems to emulate U.S. Army targeting devices for human factors studies.
+          <br />
+          - Conducted usability testing to evaluate operator accuracy and response time across multiple GUI configurations using embedded microcontroller systems.
+        </>,
+      ],
+    },
+
       {
         company: "Oregon State University",
         timeframe: "2015 - 2017",
@@ -348,25 +379,143 @@ const about: About = {
   },
 
   studies: {
-    display: false, // set to false to hide this section
-    title: "Education",
+    display: true, // set to false to hide this section
+    title: "Publications",
     institutions: [
+
       {
-        name: "Oregon State University",
-        description: <>
-        Master of Science, Mechanical Engineering, Design Focus
-        <br />2019 - 2020
-        <br />GPA 4.0/4.0
-        </>,
+        name: (
+          <a
+            href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AaxJyE8AAAAJ&citation_for_view=AaxJyE8AAAAJ:d1gkVwhDpl0C"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Toward automated functional modeling: An association rules approach for mining the relationship between product components and function
+          </a>
+        ),
+        description: (
+          <>
+            <strong>Authors:</strong>Melissa Tensa, Katherine Edmonds, Vincenzo Ferrero, Alex Mikes, Nicolas Soria Zurita, Rob Stone, Bryony DuPont
+            <br />
+            <strong>Publication date:</strong> 2019/7
+            <br />
+            <strong>Journal:</strong> Proceedings of the Design Society: International Conference on Engineering Design
+          </>
+        ),
       },
+
       {
-        name: "Oregon State University",
-        description: <>
-        Bachelor of Science, Mechanical Engineering
-        <br />2015 - 2019
-        <br />GPA 3.92/4.0 - Summa Cum Laude
-        </>,
+        name: (
+          <a
+            href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AaxJyE8AAAAJ&citation_for_view=AaxJyE8AAAAJ:u-x6o8ySG0sC"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Optimizing an algorithm for data mining a design repository to automate functional modeling
+          </a>
+        ),
+        description: (
+          <>
+            <strong>Authors:</strong>Alex Mikes, Katherine Edmonds, Robert B Stone, Bryony DuPont
+            <br />
+            <strong>Publication date:</strong> 2019/8
+            <br />
+            <strong>Journal:</strong> International Design Engineering Technical Conferences and Computers and Information in Engineering Conference
+          </>
+        ),
       },
+
+
+      {
+        name: (
+          <a
+            href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AaxJyE8AAAAJ&citation_for_view=AaxJyE8AAAAJ:u5HHmVD_uO8C"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Data mining a design repository to generate linear functional chains: a step toward automating functional modeling
+          </a>
+        ),
+        description: (
+          <>
+            <strong>Authors:</strong>Katherine Edmonds, Alex Mikes, Bryony DuPont, Robert B Stone
+            <br />
+            <strong>Publication date:</strong> 2020/2
+            <br />
+            <strong>Journal:</strong> Design Computing and Cognition’20
+          </>
+        ),
+      },
+
+
+
+      {
+        name: (
+          <a
+            href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AaxJyE8AAAAJ&citation_for_view=AaxJyE8AAAAJ:qjMakFHDy7sC"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            AutoFunc: A Python package for automating and verifying functional modeling
+          </a>
+        ),
+        description: (
+          <>
+            <strong>Authors:</strong>Alex Mikes, Katherine Edmonds, Robert B Stone, Bryony DuPont
+            <br />
+            <strong>Publication date:</strong> 2021/2
+            <br />
+            <strong>Journal:</strong> Journal of Open Source Software
+          </>
+        ),
+      },
+
+
+
+      {
+        name: (
+          <a
+            href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AaxJyE8AAAAJ&citation_for_view=AaxJyE8AAAAJ:9yKSN-GCB0IC"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            A weighted confidence metric to improve automated functional modeling
+          </a>
+        ),
+        description: (
+          <>
+            <strong>Authors:</strong>Katherine Edmonds, Alex Mikes, Bryony DuPont, Robert B Stone
+            <br />
+            <strong>Publication date:</strong> 2020/8
+            <br />
+            <strong>Journal:</strong> International Design Engineering Technical Conferences and Computers and Information in Engineering Conference
+          </>
+        ),
+      },
+
+      {
+        name: (
+          <a
+            href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=AaxJyE8AAAAJ&citation_for_view=AaxJyE8AAAAJ:2osOgNQ5qMEC"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Data Mining a Design Repository for Automating and Validating Functional Modeling
+          </a>
+        ),
+        description: (
+          <>
+            <strong>Authors:</strong>Alex Mikes
+            <br />
+            <strong>Publication date:</strong> 2020/4
+            <br />
+            <strong>Journal:</strong> Oregon State Scholar Archive
+          </>
+        ),
+      },
+
+
+
     ],
   },
   technical: {
