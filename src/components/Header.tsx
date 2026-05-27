@@ -8,6 +8,7 @@ import { Fade, Flex, Line, Row, ToggleButton } from "@once-ui-system/core";
 import { routes, display, person, about, blog, work, play, gallery } from "@/resources";
 import { ThemeToggle } from "./ThemeToggle";
 import styles from "./Header.module.scss";
+import { playfolio } from "@/resources/content";
 
 type TimeDisplayProps = {
   timeZone: string;
@@ -181,6 +182,25 @@ export const Header = () => {
                       prefixIcon="gallery"
                       href="/gallery"
                       selected={pathname.startsWith("/gallery")}
+                    />
+                  </Row>
+                </>
+              )}
+              {routes["/playfolio"] && (
+                <>
+                  <Row s={{ hide: true }}>
+                    <ToggleButton
+                      prefixIcon="gallery"
+                      href="/playfolio"
+                      label={playfolio.label}
+                      selected={pathname.startsWith("/playfolio")}
+                    />
+                  </Row>
+                  <Row hide s={{ hide: false }}>
+                    <ToggleButton
+                      prefixIcon="gallery"
+                      href="/playfolio"
+                      selected={pathname.startsWith("/playfolio")}
                     />
                   </Row>
                 </>

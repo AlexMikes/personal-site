@@ -255,6 +255,12 @@ export interface Blog extends BasePageConfig {}
 export interface Work extends BasePageConfig {}
 
 /**
+ * Playfolio page configuration.
+ * @description Configuration for the non-work projects page, including metadata and navigation label.
+ */
+export interface Playfolio extends BasePageConfig {}
+
+/**
  * Gallery page configuration.
  * @description Configuration for the Gallery page, including metadata, navigation label, and image list.
  */

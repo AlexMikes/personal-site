@@ -23,6 +23,7 @@ const routes: RoutesConfig = {
   "/resume": true,
   "/blog": true,
   "/gallery": true,
+  "/playfolio":true,
 };
 
 const display: DisplayConfig = {

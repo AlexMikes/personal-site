@@ -1,5 +1,5 @@
-import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
-import { Line, Row, Text ,SmartLink} from "@once-ui-system/core";
+import { About, Blog, Gallery, Home, Newsletter, Person, Playfolio, Social, Work } from "@/types";
+import { Line, Row, SmartLink, Text } from "@once-ui-system/core";
 
 const person: Person = {
   firstName: "Alex",
@@ -589,6 +589,14 @@ const play: Work = {
   // All play posts will be listed on the /play route
 };
 
+const playfolio: Playfolio = {
+  path: "/playfolio",
+  label: "Play",
+  title: `Playfolio – ${person.name}`,
+  description: `Non-work projects and creative experiments by ${person.name}`,
+  // Trying a simpler playfolio using cards
+};
+
 const gallery: Gallery = {
   path: "/gallery",
   label: "Gallery",
@@ -640,4 +648,4 @@ const gallery: Gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, play, gallery };
+export { person, social, newsletter, home, about, blog, work, play, playfolio, gallery };
