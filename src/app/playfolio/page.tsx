@@ -6,7 +6,7 @@ const playCards = [
     title: "Flying",
     description: "Working toward clearer skies, better judgment, and smoother landings.",
     image: "/images/play/152solo.webp",
-    href: "/play/flying",
+    href: "/playfolio/flying",
   },
   {
     title: "Biking",
