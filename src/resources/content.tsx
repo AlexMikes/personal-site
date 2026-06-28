@@ -353,10 +353,10 @@ const about: About = {
         role: "Bachelor of Science in Mechanical Engineering",
         achievements: [
           <>
-            Graduated summa cum laude with a focus on design engineering and product development.
+            Graduated summa cum laude (GPA 3.91/4.0)
           </>,
           <>
-            Completed a senior capstone project on human-centered product design and manufacturability.
+            NASA Scholar, Tau Beta Pi Engineering Honor Society, Oregon State Flying Club Board of Directors
           </>,
         ],
         images: [],
@@ -367,10 +367,7 @@ const about: About = {
         role: "Master of Science in Mechanical Engineering",
         achievements: [
           <>
-            Specialized in design for additive manufacturing, prototyping, and systems engineering.
-          </>,
-          <>
-            Conducted research in product ergonomics and mechanical systems for wearables.
+            Graduated summa cum laude (GPA 4.0/4.0)
           </>,
         ],
         images: [],
