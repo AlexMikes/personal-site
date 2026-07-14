@@ -5,10 +5,9 @@ import { useEffect, useState } from "react";
 
 import { Fade, Flex, Line, Row, ToggleButton } from "@once-ui-system/core";
 
-import { routes, display, person, about, blog, work, play, gallery } from "@/resources";
+import { routes, display, person, about, work, play } from "@/resources";
 import { ThemeToggle } from "./ThemeToggle";
 import styles from "./Header.module.scss";
-import { playfolio } from "@/resources/content";
 
 type TimeDisplayProps = {
   timeZone: string;
@@ -129,76 +128,19 @@ export const Header = () => {
                   </Row>
                 </>
               )}
-              {routes[play.path as `/${string}`] && (
-                <>
-                  <Row s={{ hide: true }}>
-                    <ToggleButton
-                      prefixIcon="rocket"
-                      href={play.path}
-                      label={play.label}
-                      selected={pathname.startsWith("/play")}
-                    />
-                  </Row>
-                  <Row hide s={{ hide: false }}>
-                    <ToggleButton
-                      prefixIcon="rocket"
-                      href={play.path}
-                      selected={pathname.startsWith("/play")}
-                    />
-                  </Row>
-                </>
-              )}
-              {routes["/blog"] && (
-                <>
-                  <Row s={{ hide: true }}>
-                    <ToggleButton
-                      prefixIcon="book"
-                      href="/blog"
-                      label={blog.label}
-                      selected={pathname.startsWith("/blog")}
-                    />
-                  </Row>
-                  <Row hide s={{ hide: false }}>
-                    <ToggleButton
-                      prefixIcon="book"
-                      href="/blog"
-                      selected={pathname.startsWith("/blog")}
-                    />
-                  </Row>
-                </>
-              )}
-              {routes["/gallery"] && (
-                <>
-                  <Row s={{ hide: true }}>
-                    <ToggleButton
-                      prefixIcon="gallery"
-                      href="/gallery"
-                      label={gallery.label}
-                      selected={pathname.startsWith("/gallery")}
-                    />
-                  </Row>
-                  <Row hide s={{ hide: false }}>
-                    <ToggleButton
-                      prefixIcon="gallery"
-                      href="/gallery"
-                      selected={pathname.startsWith("/gallery")}
-                    />
-                  </Row>
-                </>
-              )}
               {routes["/playfolio"] && (
                 <>
                   <Row s={{ hide: true }}>
                     <ToggleButton
-                      prefixIcon="gallery"
+                      prefixIcon="rocket"
                       href="/playfolio"
-                      label={playfolio.label}
+                      label={play.label}
                       selected={pathname.startsWith("/playfolio")}
                     />
                   </Row>
                   <Row hide s={{ hide: false }}>
                     <ToggleButton
-                      prefixIcon="gallery"
+                      prefixIcon="rocket"
                       href="/playfolio"
                       selected={pathname.startsWith("/playfolio")}
                     />

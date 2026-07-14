@@ -3,40 +3,59 @@ import { baseURL, about, person, playfolio } from "@/resources";
 
 const playCards = [
   {
-    title: "Flying",
-    description: "Working toward clearer skies, better judgment, and smoother landings.",
-    image: "/images/play/152solo.webp",
-    href: "/playfolio/flying",
+    title: "Skateboarding",
+    description: "Started as a kid, took a break, and recently picked it back up despite my older hardware.",
+    image: "/images/play/skate2.gif",
+    // href: "/play/skateboarding",
   },
   {
     title: "Biking",
-    description: "Mountain bike rides, small adventures, and the occasional questionable climb.",
+    description: "Mostly mountain biking these days; I prefer going uphill.",
     image: "/images/play/bike1.webp",
-    href: "/play/biking",
+    // href: "/play/biking",
   },
   {
+    title: "Hiking",
+    description: "I usually feel better after a walk in the woods.",
+    image: "/images/play/hike.webp",
+    // href: "/play/biking",
+  },
+  {
+    title: "Flying",
+    description: "Sometimes I fly airplanes (this photo is my first solo flight on March, 2013).",
+    image: "/images/play/152solo.webp",
+    // href: "/playfolio/flying",
+  },
+
+  {
     title: "Making",
-    description: "Personal builds, experiments, fixtures, sketches, and things made mostly for the joy of it.",
-    image: "/images/projects/acrylicsurf/acsurf1.webp",
-    href: "/play/making",
+    description: "I make things that I need or want, lately it's been mostly house projects.",
+    image: "/images/play/miniramp.webp",
+    // href: "/play/making",
   },
   {
     title: "Music",
-    description: "Guitar, piano, drums, bass, banjo, accordion, trumpet, and harmonica.",
+    description: "Guitar, piano, drums, bass, banjo, harmonica, accordion, and trumpet (in order of proficiency from mediocre to please stop).",
+    image: "/images/play/waylon.webp",
+    // href: "/play/music",
+  },
+ {
+    title: "Another other thing",
+    description: "I do what makes sense to me.",
     image: "/images/gallery/horizontal-2.jpg",
-    href: "/play/music",
+    // href: "/play/music",
+  },
+ {
+    title: "Another thing",
+    description: "I do what makes sense to me.",
+    image: "/images/gallery/horizontal-2.jpg",
+    // href: "/play/music",
   },
   {
     title: "Reading",
-    description: "Books, ideas, notes, and the threads that keep following me around.",
+    description: "I like to hear other people's ideas and books are a great way to do that.",
     image: "/images/gallery/vertical-2.jpg",
-    href: "/play/reading",
-  },
-  {
-    title: "Skateboarding",
-    description: "A stubborn little archive of balance, motion, and learning things the slow way.",
-    image: "/images/gallery/horizontal-4.jpg",
-    href: "/play/skateboarding",
+    // href: "/play/reading",
   },
 ];
 
@@ -52,7 +71,7 @@ export async function generateMetadata() {
 
 export default function Playfolio() {
   return (
-    <Column maxWidth="m" paddingTop="24" gap="xl">
+    <Column fillWidth maxWidth="m" paddingTop="24" gap="xl" horizontal="center" align="center">
       <Schema
         as="webPage"
         baseURL={baseURL}
@@ -66,7 +85,7 @@ export default function Playfolio() {
           image: `${baseURL}${person.avatar}`,
         }}
       />
-      <Column maxWidth="s" gap="16" horizontal="center" align="center" paddingX="l">
+      <Column fillWidth maxWidth="s" gap="16" horizontal="center" align="center" paddingX="l">
         <Heading variant="heading-strong-xl" align="center">
           {playfolio.title}
         </Heading>
@@ -78,7 +97,6 @@ export default function Playfolio() {
         {playCards.map((card) => (
           <Card
             key={card.title}
-            href={card.href}
             radius="l-4"
             direction="column"
             padding="4"
