@@ -49,7 +49,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       >
         {title && (
           <Flex flex={5}>
-            <SmartLink href={href} style={{ width: "100%" }}>
+            <SmartLink href={href} suffixIcon="chevronRight" style={{ width: "100%" }}>
               <Heading as="h2" wrap="balance" variant="heading-strong-xl">
                 {title}
               </Heading>

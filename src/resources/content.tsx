@@ -109,8 +109,7 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        I am a father, husband, son, and friend. For work, I am a senior product design engineer at StoreYour, where I design and engineer physical products. 
-        After hours, I am a skateboarder, mountain biker, musician, woodworker, airplane pilot, hiker, maker, reader, writer, listener.
+        I am a father, husband, son, brother, and friend. For work, I am a senior product design engineer at StoreYourBoard, where I design and engineer physical products. 
       </>
     ),
   },
@@ -571,7 +570,7 @@ const blog: Blog = {
 const work: Work = {
   path: "/work",
   label: "Work",
-  title: `Portfolio – ${person.name}`,
+  title: `Portfolio`,
   description: `Design and dev projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/work/projects
   // All projects will be listed on the /work route
@@ -589,8 +588,8 @@ const play: Work = {
 const playfolio: Playfolio = {
   path: "/playfolio",
   label: "Play",
-  title: `Playfolio – ${person.name}`,
-  description: `Non-work projects and creative experiments by ${person.name}`,
+  title: `Playfolio`,
+  description: `How I spend my time outside of work`,
   // Trying a simpler playfolio using cards
 };
 

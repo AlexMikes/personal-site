@@ -117,8 +117,8 @@ export default async function Project({
         </Row>
       </Row>
       
-      <Column style={{ margin: "auto" }} maxWidth="xs" marginBottom="40">
-        <Heading as="h2" variant="heading-default-xl" marginBottom="12">
+      <Column style={{ margin: "auto" }} maxWidth="m" marginBottom="40">
+        <Heading as="h2" variant="heading-default-xl" marginBottom="12" align="center">
           {post.metadata.tagline || post.metadata.summary}
         </Heading>
       </Column>
