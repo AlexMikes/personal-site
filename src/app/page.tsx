@@ -12,7 +12,7 @@ import {
   Line,
   Media,
 } from "@once-ui-system/core";
-import { home, about, person, baseURL, work, play } from "@/resources";
+import { home, about, person, baseURL, work, playfolio } from "@/resources";
 import { Mailchimp } from "@/components";
 
 export async function generateMetadata() {
@@ -125,14 +125,14 @@ export default function Home() {
                 id="play"
                 data-border="rounded"
                 prefixIcon="rocket"
-                href={play.path}
+                href={playfolio.path}
                 variant="secondary"
                 size="m"
                 weight="default"
                 arrowIcon
               >
                 <Row gap="8" vertical="center" paddingRight="4">
-                  {play.label}
+                  {playfolio.label}
                 </Row>
               </Button>
             </Row>
