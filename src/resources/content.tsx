@@ -118,7 +118,7 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "StoreYour",
+        company: "StoreYourBoard",
         timeframe: "2020 - Present",
         role: "Senior Product Design Engineer",
         achievements: [

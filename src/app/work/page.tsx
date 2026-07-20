@@ -32,7 +32,7 @@ export default function Work() {
         {work.title}
       </Heading>
       <Text variant="body-default-l" align="center" onBackground="neutral-weak" marginBottom="xl">
-        Look, I know that making storage racks is not the most meaningful work in the world. But I care about doing it well, and sharing what I learn along the way. Here are some of the products I've designed for StoreYour.
+        Look, I know that making storage racks is not the most meaningful work in the world. But I care about doing it well, and sharing what I learn along the way. Here are some of the products I've designed for StoreYourBoard.
       </Text>
       <Projects columns="3" />
     </Column>
