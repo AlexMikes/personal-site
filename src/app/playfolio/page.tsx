@@ -22,7 +22,7 @@ const playCards = [
   },
   {
     title: "Flying",
-    description: "Sometimes I fly airplanes (this photo is my first solo flight on March, 2013).",
+    description: "Sometimes I fly airplanes (this photo is my first solo flight in March, 2013).",
     image: "/images/play/152solo.webp",
     // href: "/playfolio/flying",
   },
