@@ -1,6 +1,7 @@
 import "@once-ui-system/core/css/styles.css";
 import "@once-ui-system/core/css/tokens.css";
 import "@/resources/custom.css";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/next";
 
 import classNames from "classnames";
@@ -32,6 +33,8 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const googleAnalyticsId = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID;
+
   return (
     <Flex
       suppressHydrationWarning
@@ -167,6 +170,7 @@ export default async function RootLayout({
           <Analytics />
         </Column>
       </Providers>
+      {googleAnalyticsId ? <GoogleAnalytics gaId={googleAnalyticsId} /> : null}
     </Flex>
   );
 }
