@@ -135,10 +135,19 @@ const about: About = {
             Applied mechanical engineering principles, analytical calculations, and Finite Element Analysis (FEA) to validate product functionality, structural performance, and reliability.
           </>,
           <>
-            Drove Design for Manufacturing (DfM) and Design for Assembly (DfA) initiatives to optimize production efficiency, quality, and cost targets.
+            Drove Design for Manufacturing (DfM) and Design for Assembly (DfA) initiatives to optimize production efficiency, quality, and cost targets, while balancing form and function for manufacturability, assembly, and eCommerce shipping.
           </>,
           <>
-            Collaborated with international manufacturers and suppliers to manage quoting, prototyping, tooling, production, quality control, and supply chain logistics.
+            Managed the product design, development, and production process with international manufacturers and suppliers, including quoting, prototyping, tooling, production, quality control, and supply chain logistics.
+          </>,
+          <>
+            Implemented and maintained a PLM system, and maintained a database of product information for effective communication across cross-functional teams.
+          </>,
+          <>
+            Led the product team across all hardgoods and mixed-material product lines.
+          </>,
+          <>
+            Recruited, trained, and mentored high-level team members as the design function grew.
           </>,
         ],
       },
@@ -177,6 +186,12 @@ const about: About = {
           </>,
           <>
             Created 3D models and simulations of industrial automation systems to evaluate process improvements and equipment integration.
+          </>,
+          <>
+            Designed manufacturing and reliability visual diagrams to document process flow.
+          </>,
+          <>
+            Developed a visitor safety orientation process and supporting database.
           </>,
         ],
       },
@@ -341,6 +356,7 @@ const about: About = {
       },
     ],
   },
+
 
   education: {
     display: true, // set to false to hide this section
