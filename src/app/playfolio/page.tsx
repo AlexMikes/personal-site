@@ -45,12 +45,12 @@ const playCards = [
     image: "/images/play/miniramp.webp",
     // href: "/play/music",
   },
- {
-    title: "Personal growth",
-    description: "This is a weird thing to put here, but I spend a lot of time trying to be a better person, and not because I don't think I'm good enough.",
-    image: "/images/play/fam.webp",
-    // href: "/play/music",
-  },
+{
+  title: "Family",
+  description: "My wife, daughter, and I spend most weekends outside together.",
+  image: "/images/play/fam.webp",
+  // href: "/play/family",
+},
   {
     title: "Food",
     description: "One of my greatest sources of joy in life is cooking and eating good food.",

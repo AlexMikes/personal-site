@@ -5,7 +5,7 @@ const person: Person = {
   firstName: "Alex",
   lastName: "Mikes",
   name: `Alex Mikes`,
-  role: "Product Design Engineer",
+  role: "Mechanical & Product Design Engineer",
   avatar: "/images/mej2.webp",
   email: "AlexMikes@gmail.com",
   location: "America/New_York", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -79,12 +79,11 @@ const home: Home = {
     ),
     href: "/work/building-once-ui-a-customizable-design-system",
   },
-  subline: (
-    <>
-    Welcome to my personal website. Check out what I do for work and what I do for play.
-    
-</>
-  ),
+subline: (
+  <>
+    I'm a mechanical / product design engineer who takes physical products from concept through production launch. Take a look at my work, and what I get up to outside of it.
+  </>
+),
 };
 
 const about: About = {
@@ -109,7 +108,7 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        I am a father, husband, son, brother, and friend. For work, I am a senior product design engineer at StoreYourBoard, where I design and engineer physical products. 
+      I'm a mechanical and product design engineer with a background in consumer product development, DfM/DfA, FEA, and manufacturing. 
       </>
     ),
   },
