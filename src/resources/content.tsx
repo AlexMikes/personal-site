@@ -46,8 +46,8 @@ const social: Social = [
     name: "Instagram",
     icon: "instagram",
     link: "https://www.instagram.com/thealexmikes/",
-    essential: true,
-    footer: true,
+    essential: false,
+    footer: false,
   },
   {
     name: "Threads",
