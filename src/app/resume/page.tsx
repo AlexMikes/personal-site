@@ -1,4 +1,5 @@
 import {
+  AccordionGroup,
   Avatar,
   Button,
   Column,
@@ -82,7 +83,7 @@ export default function About() {
           <TableOfContents structure={structure} about={about} />
         </Column>
       )}
-      <Row fillWidth s={{ direction: "column"}} horizontal="center">
+      <Row fillWidth s={{ direction: "column" }} horizontal="center">
         {about.avatar.display && (
           <Column
             className={styles.avatar}
@@ -169,34 +170,34 @@ export default function About() {
                 data-border="rounded"
               >
                 {social
-                      .filter((item) => item.essential)
-                      .map(
-                  (item) =>
-                    item.link && (
-                      <React.Fragment key={item.name}>
-                        <Row s={{ hide: true }}>
-                          <Button
-                            key={item.name}
-                            href={item.link}
-                            prefixIcon={item.icon}
-                            label={item.name}
-                            size="s"
-                            weight="default"
-                            variant="secondary"
-                          />
-                        </Row>
-                        <Row hide s={{ hide: false }}>
-                          <IconButton
-                            size="l"
-                            key={`${item.name}-icon`}
-                            href={item.link}
-                            icon={item.icon}
-                            variant="secondary"
-                          />
-                        </Row>
-                      </React.Fragment>
-                    ),
-                )}
+                  .filter((item) => item.essential)
+                  .map(
+                    (item) =>
+                      item.link && (
+                        <React.Fragment key={item.name}>
+                          <Row s={{ hide: true }}>
+                            <Button
+                              key={item.name}
+                              href={item.link}
+                              prefixIcon={item.icon}
+                              label={item.name}
+                              size="s"
+                              weight="default"
+                              variant="secondary"
+                            />
+                          </Row>
+                          <Row hide s={{ hide: false }}>
+                            <IconButton
+                              size="l"
+                              key={`${item.name}-icon`}
+                              href={item.link}
+                              icon={item.icon}
+                              variant="secondary"
+                            />
+                          </Row>
+                        </React.Fragment>
+                      ),
+                  )}
               </Row>
             )}
           </Column>
@@ -204,6 +205,13 @@ export default function About() {
           {about.intro.display && (
             <Column textVariant="body-default-l" fillWidth gap="m" marginBottom="xl">
               {about.intro.description}
+            </Column>
+          )}
+
+          {about.jobStory.display && (
+            <Column fillWidth gap="m" marginBottom="xl">
+              <Text variant="heading-strong-m">{about.jobStory.prompt}</Text>
+              <AccordionGroup items={about.jobStory.items} />
             </Column>
           )}
 
@@ -268,7 +276,12 @@ export default function About() {
 
           {about.education.display && (
             <>
-              <Heading as="h2" id={about.education.title} variant="display-strong-s" marginBottom="m">
+              <Heading
+                as="h2"
+                id={about.education.title}
+                variant="display-strong-s"
+                marginBottom="m"
+              >
                 {about.education.title}
               </Heading>
               <Column fillWidth gap="l" marginBottom="40">

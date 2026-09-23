@@ -138,6 +138,20 @@ export interface About extends BasePageConfig {
     /** Description of the introduction section */
     description: React.ReactNode;
   };
+  /** Job history story accordion section */
+  jobStory: {
+    /** Whether to display the story section */
+    display: boolean;
+    /** Prompt displayed above the accordion */
+    prompt: string;
+    /** Accordion items for the story section */
+    items: Array<{
+      /** Accordion item title */
+      title: string;
+      /** Accordion item content */
+      content: React.ReactNode;
+    }>;
+  };
   /** Work experience section */
   work: {
     /** Whether to display work experience */
